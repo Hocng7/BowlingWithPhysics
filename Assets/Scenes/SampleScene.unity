@@ -191,6 +191,9 @@ MonoBehaviour:
   OnMove:
     m_PersistentCalls:
       m_Calls: []
+  OnResetPressed:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &230367440
 Transform:
   m_ObjectHideFlags: 0
@@ -220,6 +223,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   scoreText: {fileID: 537300449}
+  ball: {fileID: 827211079}
+  pinCollection: {fileID: 959621306}
+  pinAnchor: {fileID: 1838557002}
+  inputManager: {fileID: 230367439}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1071,6 +1078,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &959621306 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3654620210023674434, guid: c2a8306b4cf00744b8835dec48cada1f, type: 3}
+  m_PrefabInstance: {fileID: 4878418670034245762}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1021131945
 GameObject:
   m_ObjectHideFlags: 0
@@ -1512,6 +1524,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1617f222c9bab834cac894df31721951, type: 3}
+--- !u!1 &1838557001
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1838557002}
+  m_Layer: 0
+  m_Name: PinAnchor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1838557002
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1838557001}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.8351907, y: 0.28, z: 18.96}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1902246337
 GameObject:
   m_ObjectHideFlags: 0
@@ -2069,3 +2112,4 @@ SceneRoots:
   - {fileID: 1776640631}
   - {fileID: 943751519}
   - {fileID: 1902246340}
+  - {fileID: 1838557002}
